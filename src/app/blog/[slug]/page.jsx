@@ -50,7 +50,7 @@ export default async function SinglePostPage({ params }) {
 
           <div className={styles.detailText}>
             <span className={styles.detailTitle}>Published</span>
-            <span className={styles.detailValue}>{post.createdAt}</span>
+            <span className={styles.detailValue}>{post.createdAt?.toString()}</span>
           </div>
         </div>
         <div className={styles.content}>{post.desc}</div>
